@@ -1,0 +1,18 @@
+{
+  ".github/workflows/ci.yml": "f0b8ba185d0bb29367f9f0b7592b065030b94e889317b7478811bdf0a9e998fe",
+  ".github/workflows/release.yml": "7192f76b603f2c12ae5238646e22cd5e367fc40efa498e89cc0dfabe6a789d4f",
+  ".gitignore": "7e822a78bc5473a3656649f040b7fc8c4c9ce25122529e2dd4d072b1e18222a5",
+  "README.md": "2e00b1990d33985bc35525b02402f4b96ede31a576de6da0dfa02169b6fde3aa",
+  "contracts/warrantylens.py": "229570fe0e8f1dda49fd30611853d19909adb03a41164646d47a4a1cfb6c308e",
+  "docs/DEPLOYMENT.md": "3854eed36dfe007c9f4c8b2f2ea357bef3bde2200ad46000f4a67b7ec72a4e03",
+  "docs/RELEASE_GATES.md": "c9b195cb385de5ad3d20647e8809325a338620e6fe61ec4766ea099a4c41ba65",
+  "docs/SECURITY.md": "3457006272879bf0e616515a6417107ef7057ebd97b1bf6bd8070afb58bbf0bc",
+  "docs/SUBMISSION.md": "8b979f64484d5758a522d7b75a57c19bc18ec355a09e878d86864984c5c677af",
+  "evidence/live-lifecycle.json": "3f0a0d035ebe29547a904d3c2db04fab08ff5059d89c1330b41c00a96addcfd7",
+  "package.json": "15acb0bddba2791893cfeba1ab345854bfc2908f4a8b88f977477fd8a153baa2",
+  "release.json": "fd2be90dc1e5b27c91f1eda6792098237807b1fb7e009125e6042d1b4ab89aef",
+  "requirements-dev.txt": "f1eaf46d488ff726dc83ca24d44b958f0e89f7168a6f8b587d819c7d3c5d08b5",
+  "scripts/live_qualify.mjs": "56b75ceacc37b4bce78cea09d33bfdfd6c8d7037fe977172eeac6b8694eb461c",
+  "scripts/verify-live.mjs": "79e3f3efd0dc637d084caea0b949d7174df1d034b940026f201d31ac67954b27",
+  "tests/test_contract.py": "a794326a12b359d83699fe3680a945cbca6313dec37e16949c6be0dad7eb2bb7"
+}

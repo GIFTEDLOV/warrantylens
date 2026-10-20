@@ -1,0 +1,282 @@
+{
+  "slug": "warrantylens",
+  "contract": "0xebe45565311A00A148e4469dF38aC6aB73eFdb89",
+  "id": "GNEW-warrantylens-39240970537",
+  "chainId": 61999,
+  "sourceKind": "SYNTHETIC_TEST_ONLY",
+  "status": "PASS",
+  "txs": [
+    {
+      "method": "create_case",
+      "hash": "0xfb05dfb77773e69313c99c9a5fae431ca6c982235414c249e09e94c72d8002e5",
+      "phase": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "leaders": [
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        },
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        }
+      ],
+      "verified": {
+        "status": "DRAFT",
+        "round": 0,
+        "result": "",
+        "consented": false,
+        "attested": false,
+        "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+        "challenge_count": 0,
+        "finalized_at": 0
+      }
+    },
+    {
+      "method": "consent",
+      "hash": "0xaf8c9578f27f453df05ea64b08c583bd8560c9a0c824d13aeb7a85425edc55a1",
+      "phase": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "leaders": [
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        },
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        }
+      ],
+      "verified": {
+        "status": "DRAFT",
+        "round": 0,
+        "result": "",
+        "consented": true,
+        "attested": false,
+        "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+        "challenge_count": 0,
+        "finalized_at": 0
+      }
+    },
+    {
+      "method": "freeze",
+      "hash": "0xe0d220d3107d1125ac2470f75d018209cc30ce1d4a0b6155dfedbe8f082dc87b",
+      "phase": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "leaders": [
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        },
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        }
+      ],
+      "verified": {
+        "status": "FROZEN",
+        "round": 0,
+        "result": "",
+        "consented": true,
+        "attested": false,
+        "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+        "challenge_count": 0,
+        "finalized_at": 0
+      }
+    },
+    {
+      "method": "submit_evidence",
+      "hash": "0x3e490151235436a958a6a20db98e136a19cc4b584510d2e372326f98a565fb35",
+      "phase": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "leaders": [
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        },
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        }
+      ],
+      "verified": {
+        "status": "EVIDENCE_LOCKED",
+        "round": 0,
+        "result": "",
+        "consented": true,
+        "attested": false,
+        "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+        "challenge_count": 0,
+        "finalized_at": 0
+      }
+    },
+    {
+      "method": "attest_evidence",
+      "hash": "0x3b60b9303f2e9cf3423b92337ac700d024399238d5e978c2cf48d51a7734c5e5",
+      "phase": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "leaders": [
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        },
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        }
+      ],
+      "verified": {
+        "status": "ATTESTED",
+        "round": 0,
+        "result": "",
+        "consented": true,
+        "attested": true,
+        "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+        "challenge_count": 0,
+        "finalized_at": 0
+      }
+    },
+    {
+      "method": "adjudicate",
+      "hash": "0x624e45eedc3bbc32d6a465d19177c2cc8177cf889aca40e8c7abf44e2a6615a9",
+      "phase": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "leaders": [
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        },
+        {
+          "result": "ERROR",
+          "stderr": "Validator execution cancelled after quorum"
+        }
+      ],
+      "verified": {
+        "status": "ASSESSED",
+        "round": 1,
+        "result": "COVERED",
+        "consented": true,
+        "attested": true,
+        "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+        "challenge_count": 0,
+        "finalized_at": 0
+      }
+    },
+    {
+      "method": "challenge",
+      "hash": "0x178d85517857d4643d1596c8929a0dc06a6b768a3bea39a0e601d9aab69d180d",
+      "phase": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "leaders": [
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        },
+        {
+          "result": "ERROR",
+          "stderr": "Validator execution cancelled after quorum"
+        }
+      ],
+      "verified": {
+        "status": "CHALLENGED",
+        "round": 1,
+        "result": "COVERED",
+        "consented": true,
+        "attested": true,
+        "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+        "challenge_count": 1,
+        "finalized_at": 0
+      }
+    },
+    {
+      "method": "challenge",
+      "hash": "0x953bff0b3e3deb8c65f01ae73b118709ab7553a339928cbd15e5442fe269075e",
+      "phase": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "leaders": [
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        },
+        {
+          "result": "ERROR",
+          "stderr": "Validator execution cancelled after quorum"
+        }
+      ],
+      "verified": {
+        "status": "CHALLENGED",
+        "round": 1,
+        "result": "COVERED",
+        "consented": true,
+        "attested": true,
+        "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+        "challenge_count": 2,
+        "finalized_at": 0
+      }
+    },
+    {
+      "method": "adjudicate",
+      "hash": "0xbefedc7b8a2c9c2541f929904ab5c0a91724c8c19b517fbe5bf7759007a8b701",
+      "phase": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "leaders": [
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        },
+        {
+          "result": "ERROR",
+          "stderr": "Validator execution cancelled after quorum"
+        }
+      ],
+      "verified": {
+        "status": "ASSESSED",
+        "round": 2,
+        "result": "REVIEW_REQUIRED",
+        "consented": true,
+        "attested": true,
+        "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+        "challenge_count": 2,
+        "finalized_at": 0
+      }
+    },
+    {
+      "method": "finalize_case",
+      "hash": "0x284fd2071b5ca9a9313c87661ce6cdf3dba5889a05d02a0c6d60a380679dc183",
+      "phase": "FINALIZED",
+      "consensus": "MAJORITY_AGREE",
+      "leaders": [
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        },
+        {
+          "result": "SUCCESS",
+          "stderr": ""
+        }
+      ],
+      "verified": {
+        "status": "FINALIZED",
+        "round": 2,
+        "result": "REVIEW_REQUIRED",
+        "consented": true,
+        "attested": true,
+        "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+        "challenge_count": 2,
+        "finalized_at": 1792407767
+      }
+    }
+  ],
+  "verdict": "REVIEW_REQUIRED",
+  "final": {
+    "status": "FINALIZED",
+    "round": 2,
+    "result": "REVIEW_REQUIRED",
+    "consented": true,
+    "attested": true,
+    "attestor": "0x1349e391583dba2d3028c547f2a8c8dc83e53d34",
+    "challenge_count": 2,
+    "finalized_at": 1792407767
+  },
+  "historyLength": 2
+}

@@ -1,0 +1,27 @@
+name: exact-source-quality
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Install test and GenVM lint tools
+        run: python -m pip install --disable-pip-version-check pytest genvm-linter
+      - name: Mocked contract tests (not live validation)
+        run: python -m pytest -q --import-mode=importlib tests
+      - name: Actual GenVM lint and schema
+        run: |
+          set -euo pipefail
+          genvm-lint check contracts/warrantylens.py
+          genvm-lint schema contracts/warrantylens.py --json > /tmp/abi.json
+          test -s /tmp/abi.json
+          python -m py_compile contracts/warrantylens.py

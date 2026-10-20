@@ -1,0 +1,34 @@
+name: exact-release-qualification
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-source-contract-and-live-state:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install linter tests and pinned GenLayer SDK
+        run: |
+          python -m pip install --disable-pip-version-check pytest genvm-linter
+          npm install --no-audit --no-fund
+      - name: Python adversarial tests, compiler and GenVM schema
+        run: |
+          set -euo pipefail
+          python -m pytest -q --import-mode=importlib tests
+          python -m py_compile contracts/warrantylens.py
+          genvm-lint check contracts/warrantylens.py
+          genvm-lint schema contracts/warrantylens.py --json > /tmp/warrantylens-abi.json
+          test -s /tmp/warrantylens-abi.json
+      - name: Verify public QA release source matches installed Studionet and canonical final case
+        run: node scripts/verify-live.mjs
