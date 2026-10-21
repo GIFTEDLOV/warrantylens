@@ -31,4 +31,7 @@ jobs:
           genvm-lint schema contracts/warrantylens.py --json > /tmp/warrantylens-abi.json
           test -s /tmp/warrantylens-abi.json
       - name: Verify public QA release source matches installed Studionet and canonical final case
-        run: node scripts/verify-live.mjs
+        run: |
+          node scripts/verify-live.mjs
+          node tests/test_live_e2e.mjs
+          node scripts/secret_scan.mjs

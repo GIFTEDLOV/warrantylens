@@ -14,10 +14,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
       - name: Install test and GenVM lint tools
         run: python -m pip install --disable-pip-version-check pytest genvm-linter
-      - name: Mocked contract tests (not live validation)
+      - name: Mocked contract and adversarial hardening tests
         run: python -m pytest -q --import-mode=importlib tests
+      - name: Secret leak audit
+        run: node scripts/secret_scan.mjs
       - name: Actual GenVM lint and schema
         run: |
           set -euo pipefail

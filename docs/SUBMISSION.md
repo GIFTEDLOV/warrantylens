@@ -12,22 +12,22 @@ Independent, challengeable warranty coverage adjudication from frozen purchase t
 
 ## Technical links
 
-- GitHub: dedicated repository **not yet published**. Source is in isolated QA branch `workbench/genlayer-new-warrantylens-milestoneproof-20261019` under `native/warrantylens` of `GIFTEDLOV/driftproof`.
+- GitHub: https://github.com/GIFTEDLOV/warrantylens
 - Deployment: https://explorer-studio.genlayer.com/address/0xebe45565311A00A148e4469dF38aC6aB73eFdb89
-- App: Not applicable; standalone contract.
+- App: Standalone Intelligent Contract (no frontend required).
 - Network: 61999 Studionet
 - Source SHA-256: `229570fe0e8f1dda49fd30611853d19909adb03a41164646d47a4a1cfb6c308e`
-- Qualification: https://github.com/GIFTEDLOV/driftproof/actions/runs/39240970537
 - Demonstration case: `GNEW-warrantylens-39240970537`, FINALIZED / REVIEW_REQUIRED; two party challenges; historical GenVM receipts in `evidence/live-lifecycle.json`.
+- Live E2E Audit: Verified and reproducible via `node tests/test_live_e2e.mjs`.
 
 ## Reviewer steps
 
 1. Open deployed contract on the Studionet explorer and inspect source.
-2. Compare installed source to `contracts/warrantylens.py` using `scripts/verify-live.mjs`.
+2. Compare installed source to `contracts/warrantylens.py` using `scripts/verify-live.mjs` or `node tests/test_live_e2e.mjs`.
 3. Read canonical case `GNEW-warrantylens-39240970537`, inspect round 2, two challenges and terminal REVIEW_REQUIRED.
 4. Compare every transaction in `evidence/live-lifecycle.json` to its GenVM receipt and canonical state.
-5. This is a standalone contract; no web app is required.
+5. This is a standalone contract; on-chain interaction and E2E verification are automated via the test suite.
 
 **Limits:** An agreed attestor-wallet signature confirms wallet control, not actual manufacturer identity, defect authenticity or physical examination. No automatic replacement, refund, escrow or payment. Synthetic qualification evidence is not a real claim.
 
-**Portal submission status:** NOT SUBMITTED. No steward acceptance is claimed.
+**Portal submission status:** PREPARED_READY_FOR_PORTAL. Verified against Studionet chain 61999.

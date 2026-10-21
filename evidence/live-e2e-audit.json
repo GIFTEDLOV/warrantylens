@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-10-21T07:30:24.952Z",
+  "network": "GenLayer Studionet",
+  "chainId": 61999,
+  "contractAddress": "0xebe45565311A00A148e4469dF38aC6aB73eFdb89",
+  "sourceSha256": "229570fe0e8f1dda49fd30611853d19909adb03a41164646d47a4a1cfb6c308e",
+  "canonicalCase": {
+    "id": "GNEW-warrantylens-39240970537",
+    "status": "FINALIZED",
+    "round": 2,
+    "verdict": "REVIEW_REQUIRED",
+    "challenges": 2,
+    "finalizedAt": 1792407767
+  },
+  "auditLineage": {
+    "round1Hash": "c65021e970da6ee5cec9089b4064c1d70397277de2b57a84dfec03764e93f4c3",
+    "round2Hash": "d449b6ae5e5be22413fda43f4a9ae098e62df123466fb8bf9119adf549303669",
+    "chainIntegrity": "CRYPTOGRAPHICALLY_VERIFIED"
+  },
+  "e2eStatus": "PASS"
+}
